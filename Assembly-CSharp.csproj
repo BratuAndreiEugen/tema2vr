@@ -42,6 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\TrebuchetController.cs" />
+     <Compile Include="Assets\SatteliteController.cs" />
+     <Compile Include="Assets\FollowSatellite.cs" />
+     <Compile Include="Assets\WalkingScript.cs" />
+     <Compile Include="Assets\WalkingScriptv2.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Materials" />
      <Folder Include="Assets\Scenes" />

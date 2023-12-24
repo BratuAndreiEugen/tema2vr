@@ -6,11 +6,20 @@ public class TrebuchetController : MonoBehaviour
 {
     public Rigidbody weight;
     public GameObject projectile;
-    
+
+    void DestroyHingeJoint()
+    {
+        HingeJoint hingeToDestroy;
+        hingeToDestroy = projectile.GetComponent<HingeJoint>();
+        Destroy(hingeToDestroy);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        weight.isKinematic = false;
+        
+        Invoke("DestroyHingeJoint", 1.8f);
         
     }
 
